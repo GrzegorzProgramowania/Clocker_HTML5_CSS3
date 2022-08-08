@@ -9,22 +9,23 @@
     --primary-color: #000;
     --secondary-color: #fff;
 
+
 }
 
 html.dark {
     --primary-color: #fff;
-    --sceondary-color: #333;
-}
+    --secondary-color: #333;
+  }
 
 html {
     transition: all 0.5s ease-in;
 }
 
-html.dark{
+
+html.dark {
     background-color: #111;
     color: var(--primary-color);
 }
-
 
 body {
     font-family: "Heebo", sans-serif;
@@ -39,6 +40,7 @@ body {
 
 .toggle {
     
+    cursor: pointer;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     border: 0;
@@ -73,6 +75,7 @@ left: 50%;
 height: 65px;
 width: 3px;
 transform-origin: bottom center;
+transition: all 0.5s ease-in;
 }
 
 .hand.hour {
@@ -112,3 +115,28 @@ transform-origin: bottom center;
     transform: translate(-50%, -50%);
     border-radius: 50%;
 }
+
+time {
+    font-size: 60px;
+}
+
+.date {
+    color: #aaa;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+  }
+
+  .date .circle {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 18px;
+    transition: all 0.5s ease-in;
+    font-size: 12px;
+  }
